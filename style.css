@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color: #8b9699;
     margin: 0;
+    padding: 10px; 
 }
 
 .container {
@@ -14,9 +15,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 600px; /* Prevents container from getting too wide */
-    min-width: 300px; /* Prevents it from being too small */
-    width: auto; /* Adapts to content size */
+    max-width: 500px; /* Prevents container from getting too wide */
+    min-width: 280px; /* Prevents it from being too small */
+    width: 90%; /* Adapts to content size */
 }
 
 input{
@@ -59,4 +60,25 @@ h1 {
 
 #output {
     font-weight: bolder;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 80%; /* ✅ Slightly wider to use available space */
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px; /* ✅ Reduce font size for readability */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px; /* ✅ Adjust heading size */
+    }
+
+    #output {
+        font-size: 16px;
+    }
 }
