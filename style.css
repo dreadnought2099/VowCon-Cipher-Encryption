@@ -1,36 +1,54 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8b9699;
+    margin: 0;
+}
+
+.container {
+    background: #f1e3d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 50px;
-    background-color: #F1E3D3;
+    max-width: 600px; /* Prevents container from getting too wide */
+    min-width: 300px; /* Prevents it from being too small */
+    width: auto; /* Adapts to content size */
 }
-input, button {
-    margin: 10px;
+
+input{
+    width: 90%;
     padding: 10px;
+    border: none;
+    outline: none;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
-    outline: none;
 }
 
-input#plaintext {
-    outline: none;
-    border-color: #1B4D3E;
-}
-
-button#encryptButton {
-    background-color: #1B4D3E;
+button {
+    width: 95%;
+    padding: 10px;
+    background: #1B4D3E;
     color: white;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-button#encryptButton:hover {
-    background-color: #3b7865;
+button:hover {
+    background: #296754;
 }
 
 h1, p {
     color: #1B4D3E;
 }
+
 
 #output {
     font-weight: bolder;
