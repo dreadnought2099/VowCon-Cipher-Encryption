@@ -22,12 +22,16 @@ body {
 input{
     width: 90%;
     padding: 10px;
-    border: none;
+    border: 1px solid grey;
     outline: none;
     background: #eee;
     border-radius: 5px;
     margin-bottom: 10px;
     font-size: 16px;
+}
+
+input:focus {
+    border: 1px solid #1B4D3E;
 }
 
 button {
@@ -49,6 +53,9 @@ h1, p {
     color: #1B4D3E;
 }
 
+h1 {
+    margin-bottom: 25px;
+}
 
 #output {
     font-weight: bolder;
