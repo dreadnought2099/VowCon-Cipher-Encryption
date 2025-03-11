@@ -1,96 +1,97 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #8b9699;
-    margin: 0;
-    padding: 10px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8b9699;
+  margin: 0;
+  padding: 10px;
 }
 
 .container {
-    background: #f1e3d3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 500px; /* Prevents container from getting too wide */
-    min-width: 280px; /* Prevents it from being too small */
-    width: 90%; /* Adapts to content size */
+  background: #f1e3d3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px; /* Prevents container from getting too wide */
+  min-width: 280px; /* Prevents it from being too small */
+  width: 90%; /* Adapts to content size */
 }
 
-input{
-    width: 90%;
-    padding: 10px;
-    border: 1px solid grey;
-    outline: none;
-    background: #eee;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 16px;
+input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid grey;
+  outline: none;
+  background: #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 input:focus {
-    border: 1px solid #1B4D3E;
+  border: 1px solid #1b4d3e;
 }
 
 button {
-    width: 95%;
-    padding: 10px;
-    background: #1B4D3E;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 95%;
+  padding: 10px;
+  background: #1b4d3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background: #296754;
+  background: #296754;
 }
 
-h1, p {
-    color: #1B4D3E;
+h1,
+p {
+  color: #1b4d3e;
 }
 
 h1 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 #output {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 footer {
-    text-align: center;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
 }
 
-
 @media (max-width: 480px) {
-    .container {
-        width: 80%; /* ✅ Slightly wider to use available space */
-        padding: 15px;
-    }
+  .container {
+    width: 80%; /* ✅ Slightly wider to use available space */
+    padding: 15px;
+  }
 
-    input, button {
-        font-size: 14px; /* ✅ Reduce font size for readability */
-        padding: 10px;
-    }
+  input,
+  button {
+    font-size: 14px; /* ✅ Reduce font size for readability */
+    padding: 10px;
+  }
 
-    h1 {
-        font-size: 20px; /* ✅ Adjust heading size */
-    }
+  h1 {
+    font-size: 20px; /* ✅ Adjust heading size */
+  }
 
-    #output {
-        font-size: 16px;
-    }
+  #output {
+    font-size: 16px;
+  }
 
-    footer {
-        font-size: 12px; /* ✅ Smaller font for better fit */
-        padding: 8px;
-    }
+  footer {
+    font-size: 12px; /* ✅ Smaller font for better fit */
+    padding: 8px;
+  }
 }
